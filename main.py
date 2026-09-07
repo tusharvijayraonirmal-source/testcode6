@@ -7,6 +7,7 @@ app = FastAPI()
 LLM_API_URL = "https://api.openai.com/v1/chat/completions"
 API_KEY = os.getenv("LLM_API_KEY")
 
+def a():
 
 @app.post("/chat")
 async def chat(message: str):
